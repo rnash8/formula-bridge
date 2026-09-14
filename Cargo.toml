@@ -1,0 +1,6 @@
+[package]
+name = "formula-bridge"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+description = "Strict-by-default converter between Excel and ODF spreadsheet formula syntax"
