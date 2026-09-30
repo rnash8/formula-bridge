@@ -55,9 +55,9 @@ $ echo '=XLOOKUP(A1,B:B,C:C)' | cargo run -- --from excel --to odf --lenient
 
 ## Current limitations
 
-- The function allowlist covers roughly three dozen common functions
-  (see `KNOWN_FUNCTIONS` in `src/dialect.rs`); anything else needs
-  `--lenient`.
+- The function allowlist covers about a hundred common functions (see
+  `KNOWN_FUNCTIONS` in `src/dialect.rs`, which also notes which ones were
+  left out on purpose); anything else needs `--lenient`.
 - No array formulas, no structured table references (`Table1[Column]`),
   no 3-D references spanning multiple sheets.
 - ODF absolute sheet references (`$Sheet1`) are read but downgraded to a
